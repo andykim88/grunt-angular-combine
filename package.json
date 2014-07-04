@@ -2,14 +2,14 @@
   "name": "grunt-angular-combine",
   "description": "Combine AngularJS partials into a single HTML file.",
   "version": "0.1.7",
-  "homepage": "https://github.com/astik/grunt-angular-combine",
+  "homepage": "https://github.com/andykim88/grunt-angular-combine",
   "author": {
     "name": "Romain Gonord",
     "email": "romain.gonord.opensource@neteyes.org"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/astik/grunt-angular-combine.git"
+    "url": "git://github.com/andykim88/grunt-angular-combine.git"
   },
   "bugs": {
     "url": "https://github.com/astik/grunt-angular-combine/issues"
