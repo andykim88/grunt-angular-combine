@@ -29,7 +29,10 @@ module.exports = function (grunt) {
 			});
 		});
 
-		var targetContent = grunt.file.read(this.data.options.target);
+		var targetContent = "";
+		if (grunt.file.exists(this.data.options.target)) {
+			targetContent = grunt.file.read(this.data.options.target);
+		}
 		grunt.file.write(this.data.options.target, targetContent+destContent);
 
 		if (this.data.options.remove) {
