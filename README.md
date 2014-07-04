@@ -28,9 +28,17 @@ grunt.initConfig({
     combine: {
       options : {
         appBaseDir : "app",
-        targetDir : "target"
+        target : "dist/index.html",
+        remove : true
       },
-      folders : [ 'directives' ]
+      files : [
+        {
+          expand : true,
+          cwd : "dist",
+          src : "partials/**",
+          dest : "dist"
+        }
+      ]
     },
   },
 })
@@ -44,16 +52,16 @@ Default value: `''`
 
 A string value that is used to define the app directory.
 
-#### options.targetDir
+#### options.target
 Type: `String`
 Default value: `''`
 
-A string value that is used to define where combined files should be created.
+A string value that is used to define which file the files should be combined with.  If the file does not exist, a new one will be created with that name. 
 
 ### Usage Examples
 
 #### Options
-In this example, all HTML files located into app/directives will be merged into a single file : target/directives.html. 
+In this example, all HTML files located into dist/views will be merged into a single file : dist/views.html. 
 
 ```js
 grunt.initConfig({
@@ -61,9 +69,17 @@ grunt.initConfig({
     combine: {
       options : {
         appBaseDir : "app",
-        targetDir : "target"
+        target : "dist/views.html",
+        remove : true
       },
-      folders : [ 'directives' ]
+      files : [
+        {
+          expand : true,
+          cwd : "dist",
+          src : "views/**",
+          dest : "dist"
+        }
+      ]
     },
   },
 })
