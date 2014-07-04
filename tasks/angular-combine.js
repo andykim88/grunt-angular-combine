@@ -1,6 +1,6 @@
 /*
  * grunt-angular-combine
- * https://github.com/astik/grunt-angular-combine
+ * https://github.com/andykim88/grunt-angular-combine
  *
  * Copyright (c) 2013 Romain Gonord
  * Licensed under the MIT license.
